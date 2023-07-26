@@ -1,0 +1,52 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Parent container for the header and the main content */
+.parent-container{
+    display:flex;
+    flex-direction: column;
+}
+
+
+/* Styles for the Compose Tweet section */
+.new-tweet {
+    width: 100%;
+    margin-right: 20px;
+}
+
+/* Styles for the tweets section */
+.the-tweets {
+    display: flex;
+    flex-direction: column
+}
+
+/* Styles for each tweet article */
+.tweet {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+}
+
+.container {
+    flex-direction: column;
+    align-items: center;
+}
+/* Media query for tablets (768px - 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    
+}
+
+/* Media query for large desktops (1024px and above) */
+@media screen and (min-width: 1024px) {
+    .parent-container{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+}

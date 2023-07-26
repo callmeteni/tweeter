@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Meta Information -->
   <title>Tweeter - Home Page</title>
 
@@ -17,6 +19,9 @@
 
   <!--  Tweet Container CSS-->
   <link rel="stylesheet" href="/styles/tweet-container.css">
+
+  <!-- Responsive CSS-->
+  <link rel="stylesheet" href="/styles/responsive.css">
 
   <!--  Header CSS -->
   <link rel="stylesheet" href="/styles/header.css">
@@ -38,6 +43,11 @@
   <!--  Char Counter JS-->
   <script src="/scripts/composer-char-counter.js"></script>
 
+  <!-- Timeago JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"
+    integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   <!-- App JS -->
   <script type="text/javascript" src="/scripts/client.js"></script>
 
@@ -55,6 +65,8 @@
       <i class="fa-solid fa-angles-down"></i>
     </section>
   </nav>
+  <div class="parent-container"> 
+
   <header class='top-navbar'>
     <div class="image">
       <img src="/images/profile-hex.png">
@@ -69,17 +81,21 @@
   <main class="container">
     <section class="new-tweet">
       <h2>Compose Tweet</h2>
-      <form class="form" action="/tweets.js" method="post">
+      <form class="form" action="http://localhost:8080/tweets" method="post">
         <label class="tweet-text" for="tweet-text">What are you humming about?</label>
         <textarea name="text" id="tweet-text" class="text"></textarea>
         <div class='button'>
           <button class='tweet-button' type="submit">Tweet</button>
           <output name="counter" class="counter" for="tweet-text">140</output>
         </div>
+        <div class='error-message' style="display: none;">
+          <h2>Too long. pls respect our arbitrary limit </h2>
+        </div>
       </form>
     </section>
+    
 
-    <section class='the-tweets'>
+    <section class='the-tweets' id='tweets-container'>
       <article>
         <header class="posted-tweet">
           <div id="rhonda">
@@ -91,7 +107,7 @@
         <p class="hello"> Hello World!</p>
         <footer class="tweets-foot">
           <span> 10 days ago</span>
-          <div class ="gif">
+          <div class="gif">
             <i class="fa-solid fa-flag"></i>
             <i class="fa-solid fa-retweet"></i>
             <i class="fa-solid fa-heart"></i>
@@ -101,15 +117,16 @@
     </section>
 
     <section>
-      <article class ='newton'>
+      <article class='newton'>
         <div id="newton-tag">
-          <img id ='img3'src="https://i.imgur.com/73hZDYK.png" alt="">
-          <p > Newton </p>
+          <img id='img3' src="https://i.imgur.com/73hZDYK.png" alt="">
+          <p> Newton </p>
         </div>
-        <p> SirIsaac </p>
+        <p> @SirIsaac </p>
       </article>
     </section>
   </main>
+</div>
 </body>
 <foot>This is the end page</foot>
 
