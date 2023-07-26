@@ -1,0 +1,21 @@
+.top-nav{
+    height: 400px; 
+    width:100%;
+    background-color: #bdb000ac;
+    background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
+    padding: 30px 0;
+    
+}
+
+.image{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name{
+    text-align: center;
+    padding:0;
+    margin:0;
+    
+}

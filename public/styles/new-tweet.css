@@ -1,0 +1,52 @@
+.new-tweet{
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    font-family: sans-serif;
+    background-color: antiquewhite;
+    background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#tweet-text{
+    border: none;
+    border-style: none;
+    border-color: Transparent;
+    overflow: auto;
+    outline: none;
+    border-bottom: black solid 10px;
+  }
+
+.text{
+    border-bottom: 7px solid;
+}
+
+.button{
+    font-family: 'Bungee';
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+
+}
+
+.tweet-button{
+    background-color: #4056a1;
+    color: white
+}
+
+.counter{
+    display:flex;
+    flex-direction: column;
+    text-align:right;
+
+}
+
+.counter.invalid{
+    color:red;
+}
