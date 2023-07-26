@@ -1,14 +1,3 @@
-// function charCounter(tweets){
-//         let count = 0;
-//         for (let tweet in tweets) {
-//             if (tweets.charAt(tweet)) {
-//                 count++;
-//             }
-//         }
-//         return count;
-//         console.log("hello world!");
-//     };
-
     $(document).ready(function() {
         // Get the textarea DOM node using the same selector
         const textarea = document.querySelector('.text');
