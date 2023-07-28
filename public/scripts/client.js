@@ -104,11 +104,10 @@ $(document).ready(function () {
     // Call loadTweets when the document is ready to fetch and render tweets
     loadTweets();
 
-    // Add event listener for submit button
+    // event listener for submit button
     $('.tweet-button').click(function (event) {
         // Prevent default form submission behavior
         event.preventDefault();
-        // Your custom handling code for form submission can be added here
         console.log("Form submitted!");
         
         // Ajax submit event    
@@ -153,7 +152,7 @@ $(document).ready(function () {
         }
     });
 
-    // Add event listener for form submission
+    // event listener for form submission
     $('.form').submit(function (event) {
         // Prevent default form submission behavior
         event.preventDefault();
