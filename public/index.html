@@ -81,7 +81,7 @@
   <main class="container">
     <section class="new-tweet">
       <h2>Compose Tweet</h2>
-      <form class="form" action="http://localhost:8080/tweets" method="post">
+      <form class="form" action="/tweets" method="post">
         <label class="tweet-text" for="tweet-text">What are you humming about?</label>
         <textarea name="text" id="tweet-text" class="text"></textarea>
         <div class='button'>
@@ -89,7 +89,7 @@
           <output name="counter" class="counter" for="tweet-text">140</output>
         </div>
         <div class='error-message' style="display: none;">
-          <h2>Too long. pls respect our arbitrary limit </h2>
+          <h2>Too long. pls respect our arbitrary limit  of ${MAX_TWEET_LENGTH} characters</h2>
         </div>
       </form>
     </section>
