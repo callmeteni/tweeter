@@ -1,73 +1,60 @@
-.the-tweets {
-    background-color: antiquewhite;
-    background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
-    transition: box-shadow 0.5s ease;
-}
-
-.the-tweets:hover{
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-}
-
-
-#rhonda {
+/* Styles for the individual tweet boxes (tweet containers) */
+.tweet-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: box-shadow 0.3s ease; /* Adding transition effect on box-shadow */
+  }
+  
+ 
+  /* Styles for the user avatar and handle section */
+  #rhonda {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-}
-#img2{
-    padding:20px;
-}
-.posted-tweet {
+  }
+  
+  #img2 {
+    padding: 20px;
+  }
+  
+  /* Styles for the tweet content section */
+  .posted-tweet {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-}
-
-.hello{
+  }
+  
+  .hello {
     padding: 3%;
     display: flex;
     justify-content: space-between;
- 
     border-bottom: black solid 6px;
-}
-
-
-.tweets-foot {
+  }
+  
+  /* Styles for the tweet footer section */
+  .tweets-foot {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     font-size: small;
     padding: 20px;
-}
+  }
+  
 
-.newton{
-    background-color: antiquewhite;
-    background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-#newton-tag{
-display:flex;
-flex-direction: row;
-align-items: center;
-justify-content: space-between
-}
-
-#img3{
-    padding:20px;
-}
-
-.fa-solid:hover{
+  /* Hover effect for font-awesome icons */
+  .fa-solid:hover {
     color: rgb(255, 200, 0);
     cursor: pointer;
-}
-
-body{
+  }
+  
+  /* Background styles for the entire page */
+  body {
     background-color: antiquewhite;
     background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
-}
+  }
+  
